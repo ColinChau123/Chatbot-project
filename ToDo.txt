@@ -81,6 +81,9 @@
         [ ] Discord Invite deleter #Deletes unwatned invites
         [ ] Link deleter #Deletes links that are not authorized
         [ ] Delete blacklisted words or statement, maybe add candidate responses.
+    [ ] Emoji stealer
+    [ ] Backup server and recreate webnooks?
+    [ ]
 
 
 [ ] Games

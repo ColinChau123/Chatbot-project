@@ -4,10 +4,11 @@
 
 
 [ ] Ai Function so stuff
-    [ ] Intents
+    [ ] Intents redo lol
     [ ] Responses
     [ ] Lemetizer
     [ ] Tokenizer
+    [ ] Make the bot recalll memory to answer euqstions
     [ ] Adding to intents 
         [ ] Potentially responses file
         [ ] Input file so like the patterns 
@@ -42,6 +43,11 @@
     [ ] Auto Quarrentine during raid (user command activated only reserve for highest)
     [ ] Add to blacklist for the server
     [ ] Query searching
+        [ ] Youtube
+        [ ] Immage
+        [ ] Math answers
+        [ ] Answer a text based question with Google or searching
+        [ ] Answer a question using past experiences.
     [ ] Clear the current work laod so bassically if the bot gets overloaded and stops functioning its a solution
     [ ] Blacklist role if somone is trying to slow down the bot with spam or repated responses so ignore
     [ ] Remove blacklist
@@ -52,9 +58,7 @@
     [ ] Kick a user from a vc.
     [ ] Lockdown a role 
     [ ] Beautify text font list at http://artii.herokuapp.com/fonts_list). (very big maybe feature i dont think its needed)
-    [ ] Auto delete discord invites
-    [i] Embed
-    [ ] Get immage so search but immages
+    [ ] Auto delete discord invite
     [ ] Show empty roles, aka roles with no one in them hmmm...
     [ ] Create a stats Channel so members etc////
     [ ] Add a role to any user or any role, no id or mention so hmmm.
@@ -72,7 +76,11 @@
     [ ] Count members that has this role etc so could get from discord api in thoery.
     [i] Set up staff functions like chat rules etc, I can do this Mark.
     [ ] Querry
-    [ ] 
+    [x] Polls
+    [ ] Blacklist
+        [ ] Discord Invite deleter #Deletes unwatned invites
+        [ ] Link deleter #Deletes links that are not authorized
+        [ ] Delete blacklisted words or statement, maybe add candidate responses.
 
 
 [ ] Games

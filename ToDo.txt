@@ -1,0 +1,126 @@
+[ ] = Unfinished.
+[i] = In progress.
+[x] = Completed.
+
+
+[ ] Ai Function so stuff
+    [ ] Intents
+    [ ] Responses
+    [ ] Lemetizer
+    [ ] Tokenizer
+    [ ] Adding to intents 
+        [ ] Potentially responses file
+        [ ] Input file so like the patterns 
+        [ ] Intents pattern or response adder, will require a ton of data, etc.
+        [ ] Intents patterns response adder, so will require your response to be above a certain threshold and also question answere thing cause we can add more data, if certaintiy is above a certain abmount add it, and if it isnt then dont add but have somone to manually review.
+    [ ] Short term memory
+    [ ] Longer term memory so like some things the bot will remmeber like birthdays certain classes of
+    [ ] Gather more data from online function
+    [ ] Recognize Bias context etc nlp nlu etc
+    [ ]
+
+    [ ] So the immage analyzer (only if practical in computing terms)
+        [ ] Command to check immage every time one is sent
+        [ ] Create a databse of photos
+        [ ] Recognize common photos like pets, dogs cats etc 
+        [ ] Add more immages which are then approved by designated admins in the immage approver role
+            [ ] Those immages are put in a channel where an admin immage checker can react and thus add the immage to the libary
+        [ ] Bad immage flagger
+            [ ] Feed the thing bad immages Colin will gather 
+            [ ] Potential strikes etc
+[ ] Role creation and configuration
+    [ ] Whitelist to function so dont even receive messages frmo  the server only record but dont feed them to the bot if the server isn't whitelisted.
+
+[ ] Commands/functions
+    [x] Kick
+    [x] Ban
+    [ ] Ban multiple users(only users can use this)
+    [x] Mute
+    [x] Create Channel Text
+    [x] Create Role
+    [i] Create voice Channel
+    [ ] Auto Quarrentine during raid (user command activated only reserve for highest)
+    [ ] Add to blacklist for the server
+    [ ] Query searching
+    [ ] Clear the current work laod so bassically if the bot gets overloaded and stops functioning its a solution
+    [ ] Blacklist role if somone is trying to slow down the bot with spam or repated responses so ignore
+    [ ] Remove blacklist
+    [ ] Changing channel permissions
+    [ ] Hide a vc from a user specified
+    [ ] Hide a text channel form a user
+    [ ] Hide a text channel from a role specified without having to ping the role or get the id but can be used with either
+    [ ] Kick a user from a vc.
+    [ ] Lockdown a role 
+    [ ] Beautify text font list at http://artii.herokuapp.com/fonts_list). (very big maybe feature i dont think its needed)
+    [ ] Auto delete discord invites
+    [i] Embed
+    [ ] Get immage so search but immages
+    [ ] Show empty roles, aka roles with no one in them hmmm...
+    [ ] Create a stats Channel so members etc////
+    [ ] Add a role to any user or any role, no id or mention so hmmm.
+    [ ] message referencer
+    [ ] Demoter function
+    [ ] Get staff roles and determine what they do.(this ones gonna be extra hard}
+    [ ] Blaclist a user from vc
+    [ ] Fetch which guilds in
+    [ ] Giveaways
+    [ ] Message count(with exclusion in some areas)
+    [ ] Voice system tracker, probably swap to exp.
+    [ ] Anti advertisement(just check if the activity of users contains /gg or / gg)
+    [ ] Region changer function
+    [ ] Reaction role system
+    [ ] Count members that has this role etc so could get from discord api in thoery.
+    [i] Set up staff functions like chat rules etc, I can do this Mark.
+    [ ] Querry
+    [ ] 
+
+
+[ ] Games
+    [ ] Tic tac toe
+    [ ] 
+[ ] Achievements
+    [ ] I will add them personally ok
+    [ ] 
+    [ ] 
+[ ] Database
+    [ ] Json will contain the following below info
+        [ ] Intents, assotiativem emories etc
+    [ ] Ai Function so stuff
+    [ ] Intents
+    [ ] Responses
+    [ ] Lemetizer
+    [ ] Tokenizer
+    [ ] Adding to intents 
+        [ ] Potentially responses file
+        [ ] Input file so like the patterns 
+        [ ] Intents pattern or response adder, will require a ton of data, etc.
+        [ ] Intents patterns response adder, so will require your response to be above a certain threshold and also question answere thing cause we can add more data, if certaintiy is above a certain abmount add it, and if it isnt then dont add but have somone to manually review.
+    [ ] Short term memory
+    [ ] Longer term memory so like some things the bot will remmeber like birthdays certain classes of
+    [ ] Gather more data from online function
+
+    [ ] So the immage analyzer
+        [ ] Command to check immage every time one is sent
+        [ ] Create a databse of photos
+        [ ] Recognize common photos like pets, dogs cats etc 
+        [ ] Add more immages which are then approved by designated admins in the immage approver role
+            [ ] Those immages are put in a channel where an admin immage checker can react and thus add the immage to the libary
+        [ ] Bad immage flagger
+            [ ] Feed the thing bad immages Colin will gather 
+            [ ] Potential strikes etc
+[ ] Role creation and configuration
+    [ ] 
+    [ ] 
+    [ ] 
+    [ ] 
+    [ ] 
+[ ] Games
+    [ ] Tic tac toe
+    [ ] 
+[ ] Achievements
+    [ ] 
+    [ ] 
+    [ ] 
+[ ] Database
+    [ ] Json will contain the following below info
+        [ ] Intents, assotiativem emories etc

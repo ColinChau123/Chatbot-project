@@ -1,21 +1,30 @@
-#import discord
-#from discord.ext import commands
+import discord
+from discord.ext import commands
+from discord.ext.commands.core import has_permissions
 
-#botClient = commands.Bot(command_prefix='!')
+class addRole(commands.Cog):
+    def init(self, bot):
+        self.bot = bot
+        self._last_member = None
+ 
+    @commands.command()
+    @commands.has_permissions(manage_roles=True)
+    async def addRole(self, ctx, member: discord.Member, *, role):
+	    guild = ctx.guild
+	    a = discord.utils.get(guild.roles, name=role)
+	    await ctx.send(f'Role `{a}` has been added to `{member}`.')
+	    await member.add_roles(a)
+	
+    @commands.command()
+    @commands.has_permissions(kick_members=True)
+    async def removeRole(ctx, member: discord.Member, *, role):
+	    arole = discord.utils.get(ctx.message.server.roles, name=role)
+	    if arole:
+		    await member.remove_roles(role)
+		    await ctx.send(f'Role `{role}` has been removed from `{member}`.')
+	    else:
+		    await ctx.send(f'`{member}` does not currently have the role `{role}`.')
 
-#@botClient.command()
-#@commands.has_permissions(kick_members=True)
-#async def addRole(ctx, member: discord.Member, *, role: discord.Role):
-   # await member.add_roles(member, role)
-   # await ctx.send(f'Role `{role}` has been added to `{member}`.')
+def setup(bot):
+    bot.add_cog(addRole(bot))
 
-
-#@botClient.command()
-#@commands.has_permissions(kick_members=True)
-#async def removeRole(ctx, member: discord.Member, *, role: discord.Role):
-    #arole = discord.utils.get(ctx.message.server.roles, name=role)
-    #if arole:
-       # await member.remove_roles(member, role)
-     #   await ctx.send(f'Role `{role}` has been removed from `{member}`.')
-   # else:
-     #   await ctx.send(f'`{member}` does not currently have the role `{role}`.')

@@ -23,7 +23,7 @@ generator = pipeline("conversational", model="microsoft/DialoGPT-medium")
 
 #setting seed
 set_seed(random.randint(0,9999))
-
+margin = True
 #setting up the lemmatizer. The lemmatizer is the object doing the computations for the word processing
 lemmatizer = WordNetLemmatizer()
 
@@ -55,12 +55,14 @@ def bag_of_words(sentence):
 def predict_class(sentence):
     bow = bag_of_words(sentence)
     res = model.predict(np.array([bow]))[0]
-    max_probability = 0
+    max_probability = 0.2
     result = [[1,1]]
     for i, r in enumerate(res):
         if r > max_probability:
             max_probability = r
             result[0] = [i,r]
+        else:
+            margin = False
     return_list = []
     for r in result:
         return_list.append({'intent': classes[r[0]], 'probability': str(r[1])})
@@ -78,7 +80,9 @@ def get_response(intents_list, intents_json):
 
 #get a response to some input text
 def get_response_to_text(text,history):
-    ints = predict_class(text)
-    res = get_response(ints, intents)
-    history.add_user_input(text)
-    return generator([Conversation(text)])
+    if margin:
+        ints = predict_class(text)
+        res = get_response(ints, intents)
+        history.add_user_input(text)
+        return generator([Conversation(text)])
+    margin = True
